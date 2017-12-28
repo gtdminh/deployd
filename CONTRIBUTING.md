@@ -1,19 +1,18 @@
 # Contributing to Deployd
 
-(Guidelines inspired by [AngularJS](https://github.com/angular/angular.js))
-
 We'd love to have your contribution to deployd. There are several ways to contribute:
 
  * Build an external module for deployd
  * Open bugs and feature requests for deployd core itself
  * Submit Pull Requests to deployd core
+ * Help users on the [chat](https://gitter.im/deployd/deployd)
 
 ## Questions or Issues?
 
-The best place to start is to look at existing discussions in the [Deployd Users](https://groups.google.com/forum/#!forum/deployd-users) Google Group and to look at answered questions on Stack Overflow.
-If an answer can't be found, the best bet is to post a new question
-in the Google Group, or post an issue on Github if the issue
-appears to be a bug in deployd core.
+* [chat on Gitter](https://gitter.im/deployd/deployd): Best chance to find someone to help you
+* [Discussion on Google groups](https://groups.google.com/forum/?fromgroups#!forum/deployd-users)
+* [Q&A on stackoverflow](http://stackoverflow.com/questions/tagged/deployd)
+* [Submit a bug on github](https://github.com/deployd/deployd/issues/new): only report if it's a bug from deployd Code.
 
 ### External Deployd Modules
 
@@ -114,7 +113,7 @@ in mind as you work on code to submit to deployd:
  * All public APIs must be documented in our
     [docs](https://github.com/deployd/docs)
  * JSHint should be run against all changes
-    without warnings by running `grunt jshint`
+    without warnings
 
 ## Git Commit Guidelines
 
@@ -167,13 +166,14 @@ The subject contains succinct description of the change:
 
 ###Body
 
+The first line of the body should start with the text **BREAKING CHANGES:** if any are introduced
+
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes"
 The body should include the motivation for the change and contrast this with previous behavior.
 
 ###Footer
 
-The footer should contain any information about **Breaking Changes** and is also the place to
-reference GitHub issues that this commit **Closes**.
+Reference GitHub issues that this commit **Closes**.
 
 ## Submitting Your Changes
 
@@ -218,3 +218,8 @@ git branch -D my-fix-branch
 # Update your master with the latest upstream version:
 git pull --ff upstream master
 ```
+
+## Maintainers Rebase Guide
+
+To keep a flat and readable code history and revert easier, we rebase pull requests instead of merging them. Please use the github button "Squash and merge".
+![http://i.stack.imgur.com/cyHZY.png](http://i.stack.imgur.com/cyHZY.png)
